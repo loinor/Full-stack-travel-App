@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
 
+const middlewares = require('./middlewares');
+
 const app = express();
 app.use(morgan('common'));
 app.use(helmet());
@@ -15,6 +17,10 @@ app.get('/', (req, res) => {
     message: 'Hello, world!',
   });
 });
+
+app.use(middlewares.notFound);
+
+app.use(middlewares.errorHandler);
 
 const port = process.env.PORT || 1337;
 app.listen(port, () => {
