@@ -1,4 +1,4 @@
-// Middleware for the not found pages
+// Middleware for a not found pages
 const notFound = (req, res, next) => {
   const error = new Error(`Not Found - ${req.originalUrl}`);
   res.status(404);
