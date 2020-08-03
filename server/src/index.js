@@ -11,7 +11,7 @@ const logs = require('./api/logs');
 
 const app = express();
 
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect('mongodb://localhost:27017/travel-log', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
