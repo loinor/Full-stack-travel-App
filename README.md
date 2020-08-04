@@ -5,5 +5,14 @@ ________
 To install the app you need:
 - Make a clone of the repository on your computer.
  ```git clone https://github.com/loinor/Full-stack-travel-App```
-- Go to the`server ' folder and start the server using the`npm run dev`command
-- Go to the`client ' folder and launch the client using the`npm run start`command
+- Go to the```server``` folder and start the server using the```npm run dev```command
+- Go to the```client``` folder and launch the client using the```npm run start```command
+
+TO DO LIST:
+- [ ] Make a demo with git.io
+- [ ] Make an additional request "DELETE"
+- [ ] Make a Authtorization
+- [ ] Make a better UI
+    - [ ] Change Popup design to add a point log
+    - [ ] I think better way is relocate Popup to left or right side
+    - [ ] Make a dynamic change of size marker
