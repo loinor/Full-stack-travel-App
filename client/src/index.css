@@ -5,20 +5,44 @@ body {
     sans-serif;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .marker {
   transform: translate(-50%, -100%);
 }
 
-.marker.yellow svg path {
-  stroke: #F3B73E;
+.error {
+  color: #f05305;
 }
 
-.marker.red svg path {
-  fill: red;
+.marker.red path {
+  fill: #f05305;
+}
+
+.marker.yellow path {
+  fill: #F3B73E;
 }
 
 .popup {
-  max-width: 300px;
+  width: 40vw;
+  padding: 1rem;
+}
+
+.popup img {
+  height: 200px;
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.entryForm label,
+.entryForm input,
+.entryForm textarea,
+.entryForm button {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
 }
